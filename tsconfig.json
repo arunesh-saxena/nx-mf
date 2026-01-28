@@ -32,6 +32,15 @@
     },
     {
       "path": "./libs/shared/test-utils"
+    },
+    {
+      "path": "./shell"
+    },
+    {
+      "path": "./products"
+    },
+    {
+      "path": "./orders"
     }
   ]
 }
