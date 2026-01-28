@@ -225,6 +225,20 @@ npx nx g @nx/node:lib my-api-lib
 
 You can use `npx nx list` to see all available plugins and `npx nx list <plugin-name>` to see all generators for a specific plugin.
 
+## Development
+
+Start all apps individually for HMR support:
+
+nx serve shell
+nx serve products
+nx serve orders
+nx serve users
+
+Note:
+- HMR works per app
+- Shell requires refresh to reflect remote changes
+
+
 ## Nx Cloud
 
 Nx Cloud ensures a [fast and scalable CI](https://nx.dev/ci/intro/why-nx-cloud?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) pipeline. It includes features such as:
