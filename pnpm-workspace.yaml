@@ -6,3 +6,4 @@ packages:
   - 'shell'
   - 'products'
   - 'orders'
+  - 'users'
