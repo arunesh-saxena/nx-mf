@@ -233,7 +233,8 @@ nx serve shell
 nx serve products
 nx serve orders
 nx serve users
-
+Or
+npm run dev
 Note:
 - HMR works per app
 - Shell requires refresh to reflect remote changes

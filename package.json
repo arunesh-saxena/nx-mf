@@ -2,7 +2,9 @@
   "name": "@org/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "dev": "nx run-many --target=serve --projects=shell,products,orders,users"
+  },
   "private": true,
   "dependencies": {
     "@module-federation/enhanced": "^0.21.2",
