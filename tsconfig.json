@@ -34,16 +34,16 @@
       "path": "./libs/shared/test-utils"
     },
     {
-      "path": "./shell"
+      "path": "./apps/products"
     },
     {
-      "path": "./products"
+      "path": "./apps/orders"
     },
     {
-      "path": "./orders"
+      "path": "./apps/shell"
     },
     {
-      "path": "./users"
+      "path": "./apps/users"
     }
   ]
 }

@@ -1,10 +1,10 @@
 {
-  "name": "users",
+  "name": "orders",
   "version": "0.0.1",
   "private": true,
   "nx": {
-    "name": "users",
-    "sourceRoot": "users/src",
+    "name": "orders",
+    "sourceRoot": "apps/orders/src",
     "targets": {
       "build": {
         "executor": "@nx/webpack:webpack",
@@ -14,20 +14,20 @@
         "defaultConfiguration": "production",
         "options": {
           "compiler": "babel",
-          "outputPath": "users/dist",
-          "index": "users/src/index.html",
+          "outputPath":  "apps/orders/dist",
+          "index":  "apps/orders/src/index.html",
           "baseHref": "/",
-          "main": "users/src/main.ts",
-          "tsConfig": "users/tsconfig.app.json",
+          "main":  "apps/orders/src/main.ts",
+          "tsConfig":  "apps/orders/tsconfig.app.json",
           "assets": [
-            "users/src/favicon.ico",
-            "users/src/assets"
+             "apps/orders/src/favicon.ico",
+             "apps/orders/src/assets"
           ],
           "styles": [
-            "users/src/styles.scss"
+             "apps/orders/src/styles.scss"
           ],
           "scripts": [],
-          "webpackConfig": "users/webpack.config.ts"
+          "webpackConfig":  "apps/orders/webpack.config.ts"
         },
         "configurations": {
           "development": {
@@ -39,8 +39,8 @@
           "production": {
             "fileReplacements": [
               {
-                "replace": "users/src/environments/environment.ts",
-                "with": "users/src/environments/environment.prod.ts"
+                "replace":  "apps/orders/src/environments/environment.ts",
+                "with":  "apps/orders/src/environments/environment.prod.ts"
               }
             ],
             "optimization": true,
@@ -60,16 +60,16 @@
         "executor": "@nx/react:module-federation-dev-server",
         "defaultConfiguration": "development",
         "options": {
-          "buildTarget": "users:build",
+          "buildTarget": "orders:build",
           "hmr": true,
-          "port": 4203
+          "port": 4202
         },
         "configurations": {
           "development": {
-            "buildTarget": "users:build:development"
+            "buildTarget": "orders:build:development"
           },
           "production": {
-            "buildTarget": "users:build:production",
+            "buildTarget": "orders:build:production",
             "hmr": false
           }
         },
@@ -81,14 +81,14 @@
         "executor": "@nx/react:module-federation-static-server",
         "defaultConfiguration": "production",
         "options": {
-          "serveTarget": "users:serve"
+          "serveTarget": "orders:serve"
         },
         "configurations": {
           "development": {
-            "serveTarget": "users:serve:development"
+            "serveTarget": "orders:serve:development"
           },
           "production": {
-            "serveTarget": "users:serve:production"
+            "serveTarget": "orders:serve:production"
           }
         }
       },
@@ -98,7 +98,7 @@
           "{projectRoot}/test-output/jest/coverage"
         ],
         "options": {
-          "jestConfig": "users/jest.config.cts"
+          "jestConfig":  "apps/orders/jest.config.cts"
         }
       }
     }
