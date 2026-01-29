@@ -4,6 +4,7 @@
     "appsDir": "apps",
     "libsDir": "libs"
   },
+  "projectNameAndRootFormat": "as-provided",
   "namedInputs": {
     "default": ["{projectRoot}/**/*", "sharedGlobals"],
     "production": [
